@@ -1,0 +1,347 @@
+/************************
+ General
+*************************/
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial;
+	max-width: 1300px;
+}
+
+a {
+	outline: 0;
+}
+
+table.table tbody tr td {
+	vertical-align: middle;
+}
+
+.table th {
+	background-color: #e5f3f7;
+}
+
+
+/************************
+ Header & footer
+*************************/
+.header {
+	padding: 30px 40px 0 40px;
+	background: #002554 url("../images/uoft_sc.png") no-repeat scroll 40px center;
+}
+
+/* Hide background image when screen size is less than 700px */
+@media all and ( max-width: 720px ) {
+	.header {
+		background-image: none;
+	}
+}
+
+.header h1 {
+	color: white;
+	text-align: center;
+}
+
+.utsc-header {
+	padding: 0px 10px;
+}
+/*overwrting hf*/
+
+#header{
+	border-bottom: none;
+}
+
+#footer{
+	margin-top: 40px;
+	
+}
+
+
+/************************
+ Navigation
+*************************/
+.navbar, .navbar ul, .navbar-collapse {
+	padding: 0;
+	margin: 0;
+	background-color: #002554;
+	border-radius: 0;
+	font-size: 14px;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: #03408F;
+}
+
+.navbar ul li a {
+	display: inline-block;
+	color: white;
+	line-height: 24px;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.navbar-header h2{
+	color: white;
+	margin: 0;
+	padding: 0 0 0 10px;
+	line-height: 50px;
+}
+
+.welcome-user {
+	color: white;
+	right: 40px;
+	top: 20px;
+	font-size: 18px;
+	position: absolute;
+}
+
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background-color: white;
+	border-radius: 1px;
+}
+
+
+/************************
+ Content
+*************************/
+.content-container {
+	padding: 5px 0px;
+	min-height: 500px;
+}
+
+
+
+/************************
+ Global Category
+*************************/
+
+.category-grid-item, .back-btn, .category-container{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #337ab7;
+	transition: background-color 0.15s, color 0.15s;
+	border: none;
+
+	font-size: 20px;
+	line-height: 24px;
+	border-radius: 2px;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.category-grid-item {
+	width: 100%;
+	background-color: #e5f3f7;
+}
+
+.category-grid-item:hover, .category-grid-item:focus {
+	background-color: #00a1cb;
+	color: white;
+	cursor: pointer;
+}
+
+a.back-btn {
+	background-color: #D5EBF2;
+}
+a.excel-btn {
+	background-color: #D5EBF2;
+}
+/**/
+.request-radio.btn-group .btn {
+	border-radius: 2px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 20px;
+}
+
+.beginSession-container {
+	text-align: center;
+	padding-top: 15%;
+}
+
+.category-container {
+	background-color: #E5E9EE;
+	position: relative;
+}
+
+.category-container.comment-container{
+	margin-top: 0;
+}
+
+.dropdown-container{
+	width: 100%;
+}
+
+.stat-right {
+	right: 10px;
+	position: absolute;
+}
+
+.stat-btn {
+	/*padding: 5px 10px;*/
+	border-radius: 2px;
+	transition: background-color 0.15s, color 0.15s;
+
+	border: none;
+	text-align: left;
+	width: 100%;
+	background-color: #E5E9EE;
+}
+
+
+.stat-btn:hover, .stat-btn:focus {
+	background-color: #4C74B5;
+	/*background-color: #6A99E6;*/
+}
+
+.stat-btn:hover, .stat-btn:focus, 
+.stat-btn:hover .stat-num, .stat-btn:focus .stat-num {
+	color: white;
+}
+
+/*a.stat-btn {
+	text-decoration: none;
+}*/
+
+.stat-num {
+	width: 50px;
+	display: inline-block;
+	text-align: center;
+	color: #002554;
+}
+
+.stat-pending {
+	color: #E56062;
+}
+
+/*
+.stat-add-comment {
+	font-size: 12px;
+}
+*/
+
+.stat-comment {
+	width: 100%;
+	border: 0;
+	border-radius: 2px;
+	padding: 0px 2px;
+	color: #3D3D3D;
+	font-size: 14px;
+}
+
+
+.category-breadcrumb {
+	background-color: transparent;
+	padding: 10px 0;
+}
+
+/************************
+ Division colors
+*************************/
+.division-color-1 {
+	background-color: #ACE2CA;
+}
+
+.division-color-2 {
+	background-color: #CBCABC; /*#C2B63A*/
+}
+
+
+/************************
+ Login Page
+*************************/
+.login-form {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-form div {
+	padding-bottom: 10px;
+}
+
+.login-form label {
+	min-width: 100px;
+	display: inline-block;
+}
+
+/************************
+ Edit Permissions Page
+*************************/
+.add-user-table, .permission-table {
+	margin: 20px 0;
+}
+
+.button-cell {
+	text-align: center;
+	width: 40px;
+}
+
+/************************
+ Misc
+*************************/
+.pointer {
+	cursor: pointer;
+}
+
+.full-fit {
+	display: block;
+	width: 100%;
+}
+
+.message-panel {
+	display: none;
+}
+
+div.table-scroll {
+	max-height: 600px;
+	overflow: auto;
+}
+
+.chart-container {
+	height:400px; 
+	display:inline-block;
+	margin: 50px 0;
+}
+
+table.comment-table{
+	 border: 2px solid black;
+	 width:100%;
+	 border-collapse: collapse;
+}
+
+.btn {
+	border-radius: 2px;
+}
+
+table.tablesorter {
+    margin: 10px 0pt 15px;
+    width: 100%;
+    text-align: left;
+    border-collapse: inherit;
+    border: 1px solid #CDCDCD;
+}
+
+table.tablesorter thead tr th.header {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("../images/bg.gif");
+    cursor: pointer;
+}
+
+table.tablesorter thead tr th.header.no-bg{
+	background-image: none;
+}
+
+table.tablesorter thead tr th.headerSortDown {
+    background-image: url("../images/desc.gif");
+}
+
+table.tablesorter thead tr th.headerSortUp {
+    background-image: url("../images/asc.gif");
+}
+
+
